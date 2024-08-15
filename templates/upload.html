@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléverser des Documents - Plateforme d'Apprentissage Adaptatif</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="../assets/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/upload">Téléverser des Documents</a></li>
+                <li><a href="/about">À propos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Téléversez vos documents</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="document" accept=".pdf,.docx,.txt" required>
+            <button type="submit">Analyser</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plateforme d'Apprentissage Adaptatif</p>
+    </footer>
+</body>
+</html>
